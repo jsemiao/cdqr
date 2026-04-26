@@ -601,6 +601,15 @@ h2 {
 .program-card {
   overflow: hidden;
   min-height: 292px;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.program-card:hover,
+.program-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(17, 32, 39, 0.16);
+  outline: none;
 }
 
 .program-card > div {
@@ -655,6 +664,90 @@ h2 {
   object-fit: cover;
   object-position: top center;
   background: var(--cloud);
+}
+
+body.program-modal-open {
+  overflow: hidden;
+}
+
+.program-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(17, 32, 39, 0.74);
+}
+
+.program-modal[hidden] {
+  display: none;
+}
+
+.program-modal-panel {
+  position: relative;
+  width: min(880px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  box-shadow: 0 26px 54px rgba(0, 0, 0, 0.24);
+}
+
+.program-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.program-modal-close:hover,
+.program-modal-close:focus-visible {
+  color: var(--white);
+  background: var(--ink);
+  outline: none;
+}
+
+.program-modal-figure {
+  margin: 0;
+  background: var(--cloud);
+}
+
+.program-modal-figure img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.program-modal-content {
+  padding: 26px;
+}
+
+.program-modal-kicker {
+  margin: 0 0 8px;
+  color: var(--court);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.program-modal-content h3 {
+  margin: 0 0 12px;
+}
+
+.program-modal-content p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .gallery-section {
@@ -1030,6 +1123,18 @@ h2 {
 
   .image-card img {
     height: 230px;
+  }
+
+  .program-modal {
+    padding: 12px;
+  }
+
+  .program-modal-panel {
+    max-height: calc(100vh - 24px);
+  }
+
+  .program-modal-content {
+    padding: 20px;
   }
 
   .gallery-header {

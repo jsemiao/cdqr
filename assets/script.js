@@ -91,3 +91,80 @@ if (slides.length && dotsContainer) {
   showSlide(0);
   startSlideshow();
 }
+
+const programCards = [...document.querySelectorAll(".program-card")];
+const programModal = document.querySelector("[data-program-modal]");
+const programModalClose = document.querySelector("[data-program-close]");
+const programModalFigure = document.querySelector("[data-program-modal-figure]");
+const programModalImage = document.querySelector("[data-program-modal-image]");
+const programModalKicker = document.querySelector("[data-program-modal-kicker]");
+const programModalTitle = document.querySelector("[data-program-modal-title]");
+const programModalDescription = document.querySelector("[data-program-modal-description]");
+
+const closeProgramModal = () => {
+  if (!programModal) return;
+  programModal.classList.remove("is-open");
+  programModal.setAttribute("hidden", "");
+  document.body.classList.remove("program-modal-open");
+};
+
+const openProgramModal = (card) => {
+  if (!programModal || !programModalKicker || !programModalTitle || !programModalDescription) {
+    return;
+  }
+
+  const kicker = card.querySelector("span")?.textContent?.trim() ?? "Programa";
+  const title = card.querySelector("h3")?.textContent?.trim() ?? "Detalhes do programa";
+  const description = card.querySelector("p")?.textContent?.trim() ?? "";
+  const image = card.querySelector("img");
+
+  programModalKicker.textContent = kicker;
+  programModalTitle.textContent = title;
+  programModalDescription.textContent = description;
+
+  if (image && programModalImage && programModalFigure) {
+    programModalImage.src = image.src;
+    programModalImage.alt = image.alt;
+    programModalFigure.removeAttribute("hidden");
+  } else if (programModalImage && programModalFigure) {
+    programModalImage.src = "";
+    programModalImage.alt = "";
+    programModalFigure.setAttribute("hidden", "");
+  }
+
+  programModal.removeAttribute("hidden");
+  programModal.classList.add("is-open");
+  document.body.classList.add("program-modal-open");
+};
+
+if (programCards.length && programModal) {
+  programCards.forEach((card) => {
+    card.setAttribute("role", "button");
+    card.setAttribute("tabindex", "0");
+
+    card.addEventListener("click", () => {
+      openProgramModal(card);
+    });
+
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openProgramModal(card);
+      }
+    });
+  });
+
+  programModalClose?.addEventListener("click", closeProgramModal);
+
+  programModal.addEventListener("click", (event) => {
+    if (event.target === programModal) {
+      closeProgramModal();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && programModal.classList.contains("is-open")) {
+      closeProgramModal();
+    }
+  });
+}
