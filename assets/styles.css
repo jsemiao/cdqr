@@ -98,24 +98,36 @@ button {
   width: 148px;
   min-width: 112px;
   text-decoration: none;
-  transition: opacity 180ms ease, width 180ms ease, min-width 180ms ease;
+  transition: width 180ms ease, min-width 180ms ease;
 }
 
-.site-header.is-scrolled .brand {
-  width: 0;
-  min-width: 0;
-  opacity: 0;
-  overflow: hidden;
-  pointer-events: none;
+.site-header.is-scrolled .brand,
+.site-header.menu-open .brand {
+  width: 92px;
+  min-width: 72px;
 }
 
-.brand img {
+.brand-logo {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: contain;
   background: var(--white);
   border-radius: 6px;
   padding: 4px;
+}
+
+.brand-logo-scrolled {
+  display: none;
+}
+
+.site-header.is-scrolled .brand-logo-default,
+.site-header.menu-open .brand-logo-default {
+  display: none;
+}
+
+.site-header.is-scrolled .brand-logo-scrolled,
+.site-header.menu-open .brand-logo-scrolled {
+  display: block;
 }
 
 .main-nav {
