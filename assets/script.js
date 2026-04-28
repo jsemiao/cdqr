@@ -556,6 +556,167 @@ const translations = {
     footerLogoAlt: "Centre Sportif Quinta das Raposeiras",
     footerText: "Centre Sportif Quinta das Raposeiras, Faro, Algarve.",
     footerCopyright: "© {{year}} CDQR. Tennis, padel et communaute."
+  },
+  de: {
+    htmlLang: "de",
+    pageTitle: "Sportzentrum Quinta das Raposeiras | Tennis und Padel in Faro",
+    pageDescription:
+      "Sportzentrum Quinta das Raposeiras in Santa Barbara de Nexe, Faro. Tennis- und Padelplaetze, Akademie, Veranstaltungen, soziale Programme und Sports Bar.",
+    languageSwitchAria: "Sprache waehlen",
+    brandAria: "Sportzentrum Quinta das Raposeiras",
+    brandLogoDefaultAlt: "Logo des Sportzentrums Quinta das Raposeiras",
+    brandLogoScrolledAlt: "Vereinfachtes Logo des Sportzentrums Quinta das Raposeiras",
+    menuSrOnly: "Menue oeffnen",
+    navAria: "Hauptnavigation",
+    navLinks: ["Club", "Info", "Services", "Programme", "Fotos", "Kontakt"],
+    heroEyebrow: "Tennis • Padel • Faro, Algarve",
+    heroTitleLine1: "Sportzentrum",
+    heroTitlePlace: ["Quinta das", "Raposeiras"],
+    heroCopy:
+      "Auf dem Hoehenzug von Quinta das Raposeiras: ein Ort fuer Natur, Gemeinschaft und Sport fuer alle Altersgruppen.",
+    heroActionsAria: "Hauptaktionen",
+    heroButtons: ["Platz buchen", "Programme ansehen"],
+    quickFactsAria: "Ueberblick der Anlagen",
+    quickFactsLabels: ["Tennisplaetze", "Padelplaetze", "Montag bis Samstag", "Barrocal Algarve"],
+    introKicker: "Willkommen",
+    introTitle: "Sport, Freizeit und Gemeinschaft auf den Hoehen von Raposeiras.",
+    introParagraphs: [
+      "Das Sportzentrum Quinta das Raposeiras liegt in einem Gebiet, das vor allem auf Freizeit ausgerichtet ist. Hier verbindet sich die Ruhe mit der Natur und schafft ideale Bedingungen fuer sportliche Aktivitaet.",
+      "Wir bieten einen vielfaeltigen Jahresplan mit Veranstaltungen, Services und spezifischen Tennis- und Padelprogrammen, begleitet von unserem sozialen Sports Bar Bereich.",
+      "Besuchen Sie uns. Wir freuen uns auf Sie."
+    ],
+    clubKicker: "CDQR",
+    clubTitle: "Ein Club mit Geschichte, neuer Energie und Blick nach vorn.",
+    clubParagraphs: [
+      "Die Tennisplaetze von Quinta das Raposeiras entstanden Ende der 70er und Anfang der 80er Jahre und gehoerten zu den ersten Plaetzen der Gemeinde Faro. Fernando Martins schuf oben auf dem Gelaende einen Bereich fuer Sport, Freizeit und Begegnung.",
+      "Nach Jahren aktiver Nutzung und einer ruhigeren Phase startete Angelo Orge 2006 ein Revitalisierungsprojekt, erneuerte die Anlage und staerkte Veranstaltungen, Kommunikation und neue Infrastruktur, einschliesslich Padel."
+    ],
+    timelineAria: "Zeitleiste des Clubs",
+    timelineThirdTag: "Heute",
+    timelineTitles: ["Erste Plaetze", "Revitalisierung", "Tennis und Padel"],
+    timelineParagraphs: [
+      "Die Sportzone von Quinta das Raposeiras entsteht, mit Fokus auf Tennis und Gemeinschaft.",
+      "Neue Leitung, Wiederherstellung der Anlagen und Neustart des sportlichen Clublebens.",
+      "Regelmaessige Programme, Akademie, Turniere, Sports Bar und eine wachsende Community."
+    ],
+    valuesAria: "Mission, Vision und Werte",
+    valueTitles: ["Mission", "Vision", "Werte"],
+    valueParagraphs: [
+      "Foerderung und Verbreitung sportlicher Aktivitaet, insbesondere einer nachhaltigen Entwicklung von Tennis und Padel.",
+      "Gesundheit, gute koerperliche Gewohnheiten und starkes soziales Engagement mit exzellentem Service und klarem Profil verbinden.",
+      "Strenge, Innovation, Qualitaet und Kompetenz in allen Leistungen des Clubs."
+    ],
+    infoKicker: "Info",
+    infoTitle: "Lage, Oeffnungszeiten und Anlagen.",
+    infoPanelTitles: ["Kontakt", "Oeffnungszeiten", "Anlagen"],
+    infoAddress:
+      "Sportzentrum Quinta das Raposeiras<br>Quinta das Raposeiras, Rua do Tenis<br>8005-527 Faro, Algarve, Portugal",
+    infoGps: "GPS: 37 08 01.2 N 7 56 07.8 W",
+    hoursDays: ["Montag bis Samstag", "Sonntage"],
+    facilitiesItems: [
+      "3 Tennis-Hartplaetze",
+      "2 Padelplaetze",
+      "Trainingswand und Mini-Tennisplatz",
+      "Tennis-Clubhaus und Padel-Clubhaus",
+      "Sports Bar und Umkleiden"
+    ],
+    servicesKicker: "Services",
+    servicesTitle: "Alles, was Sie zum Spielen, Trainieren und Austauschen brauchen.",
+    serviceTitles: ["Tennis Akademie", "Padel Akademie", "Veranstaltungen", "Pro Shop", "Sports Bar"],
+    serviceParagraphs: [
+      "Platzmiete, Gruppenkurse, Einzeltraining, Schlaeger, Baelle, Club Supporters und Besaitungsservice.",
+      "Padelplaetze, Gruppenkurse, Einzeltraining, Materialverleih und technische Entwicklungsbegleitung.",
+      "Turniere, Clinics, Sportcamps, Geburtstage und Programme fuer Unternehmen.",
+      "Club-Merchandising, Schlaeger, Baelle, Zubehoer und Textilien fuer Tennis und Padel.",
+      "Kaffee, Getraenke und Snacks fuer gute Momente nach dem Spiel."
+    ],
+    programsKicker: "Programme",
+    programsTitle: "Sozialer und sportlicher Jahreskalender.",
+    programCardSpans: ["Social Tennis", "Social Padel", "Club Supporters", "Veranstaltungen", "Pro Shop", "Summer Camp"],
+    programCardTitles: [
+      "\"Foxes\"",
+      "\"Rapido\"",
+      "Club-Spieler",
+      "Tennis & Padel BBQ, Sunset Padel und mehr",
+      "Ausrustung und Merchandising",
+      "Sommerprogramm fuer Jugendliche"
+    ],
+    programCardParagraphs: [
+      "Freundschaftliche Doppelspiele am Montag-, Mittwoch- und Freitagvormittag.",
+      "Gemischtes Round-Robin-Format am Sonntagvormittag.",
+      "Jaehrliches Spendenprogramm zur Unterstuetzung der CDQR-Aktivitaeten und Community.",
+      "Wettkampforientierte und soziale Momente fuer verschiedene Altersgruppen und Spielniveaus.",
+      "Unterstuetzendes Material fuer Training, Spiele, Veranstaltungen und Clubidentitaet.",
+      "Vormittagsaktivitaeten im Juli, speziell fuer junge Spieler."
+    ],
+    programCardImageAlts: [
+      "Poster des Programms Social Tennis Foxes",
+      "Poster des Programms Social Padel Rapido",
+      "Poster des Programms Club Supporters",
+      "Poster der Veranstaltungen des Sportzentrums Quinta das Raposeiras",
+      "Pro Shop Poster",
+      "Poster des Programms Summer Camp 2026"
+    ],
+    programModalCloseAria: "Programm schliessen",
+    programModalFallbackKicker: "Programm",
+    programModalFallbackTitle: "Programmdetails",
+    galleryKicker: "Fotos",
+    galleryTitle: "Auf und neben dem Platz.",
+    galleryImageAlts: [
+      "Padelplatz im Sportzentrum Quinta das Raposeiras",
+      "Luftaufnahme der Padelplaetze",
+      "Gruppe von Teilnehmern bei einer Clubveranstaltung",
+      "Besuch im Sportzentrum Quinta das Raposeiras",
+      "Feier von zehn Jahren Clubgeschichte",
+      "Sporttreffen in Oeiras",
+      "Tennisplatz im Sportzentrum Quinta das Raposeiras",
+      "Von Natur umgebene Tennisanlagen",
+      "Academia Champs im Sportzentrum Quinta das Raposeiras",
+      "Uebergabe eines Schlaegers an einen jungen Spieler",
+      "Aktivitaet im Sportcamp",
+      "Clubteilnehmer",
+      "Geburtstagsfeier im Club",
+      "Carlos Vilas Boas im Sportzentrum Quinta das Raposeiras",
+      "Sozialbereich mit Pokalen und Erinnerungen des Clubs",
+      "Titelbild des Sportzentrums Quinta das Raposeiras"
+    ],
+    galleryCaptions: [
+      "Padel in Raposeiras",
+      "Luftaufnahme der Plaetze",
+      "Veranstaltungen und Community",
+      "Besuche und Treffen",
+      "10 Jahre Geschichte",
+      "Wettkampfmomente",
+      "Tennis in Raposeiras",
+      "Natur und Sport",
+      "Akademie und Training",
+      "Generationen im Spiel",
+      "Jugendaktivitaeten",
+      "CDQR-Spieler",
+      "Geburtstage und Gemeinschaft",
+      "Besondere Besuche",
+      "Erinnerungen an den Club",
+      "Ueberblick ueber den Club"
+    ],
+    galleryPrevAria: "Vorheriges Foto",
+    galleryNextAria: "Naechstes Foto",
+    galleryDotsAria: "Foto auswaehlen",
+    galleryDotAriaPrefix: "Foto anzeigen",
+    partnersKicker: "Partnerschaften",
+    partnersTitle: "Institutionen, Marken und jaehrliche Partner.",
+    partnerGroupTitles: ["Institutionell und offiziell", "Jaehrlich"],
+    partnerFirstList: [
+      "ATA, Algarve Tennis Verband",
+      "FPT, Portugiesischer Tennisverband",
+      "FPP, Portugiesischer Padelverband"
+    ],
+    contactKicker: "Kontakt",
+    contactTitle: "Buche dein naechstes Spiel in Raposeiras.",
+    contactText: "Quinta das Raposeiras, Rua do Tenis, 8005-527 Faro.",
+    contactEmailButton: "E-Mail senden",
+    footerLogoAlt: "Sportzentrum Quinta das Raposeiras",
+    footerText: "Sportzentrum Quinta das Raposeiras, Faro, Algarve.",
+    footerCopyright: "© {{year}} CDQR. Tennis, Padel und Community."
   }
 };
 
