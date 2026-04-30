@@ -134,6 +134,7 @@ button {
   display: flex;
   align-items: center;
   gap: 4px;
+  flex: 1;
   font-weight: 800;
 }
 
@@ -161,6 +162,7 @@ button {
   padding: 4px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 999px;
+  margin-left: auto;
 }
 
 .site-header.is-scrolled .lang-switch,
@@ -1038,14 +1040,17 @@ body.program-modal-open {
   }
 
   .lang-switch {
-    position: fixed;
-    top: 20px;
-    right: 72px;
-    z-index: 31;
-    border-color: var(--line);
+    position: static;
+    margin-left: 0;
+    margin-top: 4px;
+    padding: 10px 0 4px;
+    border: none;
+    border-top: 1px solid var(--line);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    justify-content: center;
     color: var(--ink);
-    background: rgba(255, 255, 255, 0.96);
-    box-shadow: 0 8px 18px rgba(17, 32, 39, 0.12);
   }
 
   .main-nav.is-open {
@@ -1123,7 +1128,7 @@ body.program-modal-open {
   }
 
   .lang-switch {
-    right: 66px;
+    gap: 2px;
   }
 
   .hero {
